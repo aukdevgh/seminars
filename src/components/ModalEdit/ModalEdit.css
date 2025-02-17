@@ -1,0 +1,33 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form__input {
+    padding: 4px 8px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 6px;
+    border-color: #c9c7c7;
+    border-width: 1px;
+}
+
+input[type='date' i]::-webkit-calendar-picker-indicator,
+input[type='time' i]::-webkit-calendar-picker-indicator {
+    background-color: #000;
+    border-radius: 4px;
+}
+
+.form__actions {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}

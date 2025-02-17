@@ -1,0 +1,21 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-transform: capitalize;
+    text-align: center;
+    text-wrap: pretty;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.red:focus,
+.red:hover {
+    background-color: red;
+}
+
+.green:focus,
+.green:hover {
+    background-color: green;
+}
