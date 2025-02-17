@@ -1,7 +1,7 @@
 .card {
     padding: 24px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 32px;
     background-color: #242424;
     border: 1px solid #fff;
@@ -21,7 +21,6 @@
 }
 
 .card__info {
-    max-width: 50%;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -39,26 +38,17 @@
 
 .card__actions {
     display: flex;
-    align-items: flex-start;
+    justify-content: flex-end;
     gap: 16px;
 }
 
-@media screen and (max-width: 768px) {
-    .card,
+@media screen and (max-width: 1024px) {
     .card__content {
         flex-direction: column;
     }
 
     .card__img {
         margin: 0 auto;
-    }
-
-    .card__info {
-        max-width: max-content;
-    }
-
-    .card__actions {
-        justify-content: flex-end;
     }
 }
 
